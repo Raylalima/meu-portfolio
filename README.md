@@ -1,2 +1,2 @@
 # meu-portfolio
-Meu Portfolio
+Meu Portfolio criado nas aulas do Senai, curso Afesu.
