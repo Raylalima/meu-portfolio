@@ -20,7 +20,7 @@
 body {
     background: var(--cor-fundo); /* cor do fundo */
     color: var(--cor-texto); /* cor TEXTOS */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
 
 a {
@@ -70,13 +70,33 @@ header {
     text-transform: uppercase;
 }
 
-/* Menu hamburguer
-Botão menu mobile */
+/*------ Menu hamburguer
+Botão menu mobile ----------*/
 
+#menuHamburger {
+    margin-left: 1rem;
+}
+
+.btn-menu-mobile {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--cor-texto);
+    display: flex;
+    font-size: 1.8rem;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
 
 /* Medidas Responsivas */
 @media (min-width: 768px) {
     .menu-desktop {
         display: flex;
     }
+
+    .btn-menu-mobile {
+        display: none;
+    }
 }
+
