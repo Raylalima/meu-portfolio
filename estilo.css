@@ -121,7 +121,7 @@ Botão menu mobile ----------*/
 
 .menu-mobile .menu-item {
     width: 100%;
-    text-align: center;
+    text-align: center;      
 }
 
 .menu-mobile .menu-link {
@@ -130,13 +130,23 @@ Botão menu mobile ----------*/
     font-size: 1rem;
 }
 
+.logo {
+    width: 3.24rem; /* comprimento */
+    height: auto; /* altura */
+}
+
+.header-toggle {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
 
 /* Medidas Responsivas */
 @media (min-width: 768px) {
     .menu-desktop {
         display: flex;
-        min-width: 30%;
+        min-width: 30%; /* alinhar logo */
     }
 
     .btn-menu-mobile {
@@ -144,7 +154,7 @@ Botão menu mobile ----------*/
     }
 
     .header-toggle {
-        min-width: 30%;
+        min-width: 30%; /* alinhar o logo */
     }
 
 }
