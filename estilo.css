@@ -17,6 +17,18 @@
     --cor-border: #1b1b1b;
 }
 
+/* Inverter Cor LOGO = Filtro */
+html[data-theme='light'] .logo {
+    filter: invert(1);
+}
+
+/* Reset CSS = Padronizar */
+/* Seletor Universal */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: var(--cor-fundo); /* cor do fundo */
     color: var(--cor-texto); /* cor TEXTOS */
@@ -38,7 +50,9 @@ header {
     align-items: center;
     width: 100%;
     background: var(--cor-fundo);
-    border-bottom: 5px solid var(--cor-border);
+    border-bottom: 2px solid var(--cor-border);
+    position: fixed;
+    z-index: 9999; /* Camadas */
 }
 
 .menu-desktop {
