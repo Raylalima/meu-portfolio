@@ -27,6 +27,7 @@ html[data-theme='light'] .logo {
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -53,6 +54,7 @@ header {
     border-bottom: 2px solid var(--cor-border);
     position: fixed;
     z-index: 9999; /* Camadas */
+    padding: .5rem 1rem;
 }
 
 .menu-desktop {
@@ -157,10 +159,23 @@ Botão menu mobile ----------*/
 
 #home {
     padding: 3.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
 }
 
 /* Medidas Responsivas */
 @media (min-width: 768px) {
+
     .menu-desktop {
         display: flex;
         min-width: 30%; /* alinhar logo */
@@ -174,5 +189,29 @@ Botão menu mobile ----------*/
         min-width: 30%; /* alinhar o logo */
     }
 
+    header {
+        padding: 1rem 6rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    #home {
+        padding: 8rem 6rem 4rem 6rem;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+} /* FIM min 768px */
+
+@media (min-width: 1400px) {
+    h1 {
+      font-size: 6.5rem;  
+    }
 }
 
