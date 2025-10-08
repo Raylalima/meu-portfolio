@@ -161,6 +161,7 @@ Botão menu mobile ----------*/
     padding: 3.5rem 1rem;
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
 }
 
 .main-content {
@@ -171,6 +172,47 @@ Botão menu mobile ----------*/
 
 h1 {
     font-size: 2.5rem;
+}
+
+.video iframe {
+    aspect-ratio: 16/9;
+}
+
+#home,
+.produtos,
+.sobre,
+.contato {
+    padding: 2.5rem 1rem;
+}
+
+.descricao-video {
+    display: flex;
+    flex-direction: column;
+    background: #343739;
+    padding: 6.25rem 1rem 2rem;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: -6.5rem;
+}
+
+.descricao-video h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: -2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+}
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.produtos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
 }
 
 /* Medidas Responsivas */
@@ -197,7 +239,9 @@ h1 {
         font-size: 5rem;
     }
 
-    #home {
+    #home,
+    .produtos,
+    .sobre {
         padding: 8rem 6rem 4rem 6rem;
     }
 
@@ -212,6 +256,12 @@ h1 {
 @media (min-width: 1400px) {
     h1 {
       font-size: 6.5rem;  
+    }
+
+    .descricao-video,
+    .produtos,
+    .sobre {
+        padding: 10rem 15rem 4rem;
     }
 }
 
