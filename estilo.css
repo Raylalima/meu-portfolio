@@ -27,6 +27,7 @@ html[data-theme='light'] .logo {
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -53,6 +54,7 @@ header {
     border-bottom: 2px solid var(--cor-border);
     position: fixed;
     z-index: 9999; /* Camadas */
+    padding: .5rem 1rem;
 }
 
 .menu-desktop {
@@ -155,9 +157,79 @@ Botão menu mobile ----------*/
     align-items: center;
 }
 
+#home {
+    padding: 3.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+.video iframe {
+    aspect-ratio: 16/9;
+}
+
+#home,
+.produtos,
+.sobre,
+.contato {
+    padding: 2.5rem 1rem;
+}
+
+.descricao-video {
+    display: flex;
+    flex-direction: column;
+    background: #343739;
+    padding: 6.25rem 1rem 2rem;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: -6.5rem;
+}
+
+.descricao-video h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: -2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+}
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.produtos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.produto-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.img-card {
+    width: 100%;
+    border-radius: .5rem;
+}
+
 
 /* Medidas Responsivas */
 @media (min-width: 768px) {
+
     .menu-desktop {
         display: flex;
         min-width: 30%; /* alinhar logo */
@@ -171,5 +243,47 @@ Botão menu mobile ----------*/
         min-width: 30%; /* alinhar o logo */
     }
 
+    header {
+        padding: 1rem 6rem;
+    }
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    #home,
+    .produtos,
+    .sobre {
+        padding: 8rem 6rem 4rem 6rem;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+} /* FIM min 768px */
+
+@media (min-width: 992px) {
+    .produto-card {
+        flex-direction: row;
+    }
+
+    .img-card {
+        width: 55%;
+    }
+}
+
+@media (min-width: 1400px) {
+    h1 {
+      font-size: 6.5rem;  
+    }
+
+    .descricao-video,
+    .produtos,
+    .sobre {
+        padding: 10rem 15rem 4rem;
+    }
 }
 
