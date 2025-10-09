@@ -215,6 +215,18 @@ h1 {
     gap: 4rem;
 }
 
+.produto-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.img-card {
+    width: 100%;
+    border-radius: .5rem;
+}
+
+
 /* Medidas Responsivas */
 @media (min-width: 768px) {
 
@@ -252,6 +264,16 @@ h1 {
     }
 
 } /* FIM min 768px */
+
+@media (min-width: 992px) {
+    .produto-card {
+        flex-direction: row;
+    }
+
+    .img-card {
+        width: 55%;
+    }
+}
 
 @media (min-width: 1400px) {
     h1 {
