@@ -234,14 +234,30 @@ h1 {
     gap: 1rem;
 }
 
-.card-title {
-    color: ; /* cor do texto */
-    font-size: ; /* tamanho do texto */
-    font-weight: ; /* largura */
+.card-titulo {
+    /*color: ;  cor do texto */
+    font-size: 1.5rem; /* tamanho do texto */
+    font-weight: 300px; /* largura */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* estilo das fontes */
 }
 
-.card-
+.card-descricao {
+    font-size: 1.1rem;
+    font-weight: 400px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-lista {
+    font-size: 1.1rem;
+    font-weight: 400px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-item {
+    font-size: 1.1rem;
+    font-weight: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 /* Medidas Responsivas */
 @media (min-width: 768px) {
