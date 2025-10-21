@@ -269,18 +269,22 @@ h3 {
     font-weight: 400;
 }
 
-.card-lista {
-    margin-bottom: 1rem;
-    
-    font-weight: 400;
-    font-family: ;
+.card-item {
+    margin-bottom: .8rem;
 }
 
-.card-item {
-    
+.card-item i {
+    margin-right: 8px;
 }
 
 /* Medidas Responsivas */
+/* Telas Até 768 */
+@media (max-width: 768px) {
+    #home {
+        padding-top: 5rem;
+    }
+}
+
 @media (min-width: 768px) {
 
     #home {
