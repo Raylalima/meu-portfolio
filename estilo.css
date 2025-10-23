@@ -11,6 +11,11 @@
     --cor-texto: #e9e9e9;
     --menu-link: #e9e9e9;
     --cor-border:#e9e9e9;
+    
+    --cor-hover-icone: #d268a4;
+    --cor-hover-instagram: #d7952a;
+    --cor-hover-whatsapp: #3ac74b;
+    
 }
 
 :root[data-theme='light'] {
@@ -18,6 +23,10 @@
     --cor-texto: #1b1b1b;
     --menu-link: #1b1b1b;
     --cor-border: #1b1b1b;
+
+    --cor-hover-icone: #d268a4;
+    --cor-hover-instagram: #d7952a;
+    --cor-hover-whatsapp: #3ac74b;
 }
 
 /* Inverter Cor LOGO = Filtro */
@@ -279,6 +288,27 @@ h3 {
 
 .card-item i {
     margin-right: 8px;
+}
+
+.card-item i:hover {
+    color: var(--cor-hover-icone);
+    transition: .3s ease-in-out;
+}
+
+.redes-sociais {
+    font-size: 1.2rem;
+}
+
+.redes-sociais i:hover {
+    color: var(--cor-hover-icone);
+}
+
+.redes-sociais .instagram:hover {
+    color: var(--cor-hover-instagram);
+}
+
+.redes-sociais .whatsapp:hover {
+    color: var(--cor-hover-whatsapp);
 }
 
 /* Medidas Responsivas */
