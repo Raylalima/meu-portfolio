@@ -311,6 +311,29 @@ h3 {
     color: var(--cor-hover-whatsapp);
 }
 
+.col1 {
+    background: palevioletred;
+}
+
+.col2 {
+    background: #1ec4f2;
+}
+
+.col3 {
+    background: red;
+}
+
+.col4 {
+    background: #d7952a;
+}
+
+.col5 {
+    background: #2ad73e;
+}
+
+.col6 {
+    background: #5c048e;
+}
 /* Medidas Responsivas */
 /* Telas Até 768 */
 @media (max-width: 768px) {
