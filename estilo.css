@@ -44,6 +44,7 @@ html[data-theme='light'] .logo {
 
 html {
     scroll-behavior: smooth; /* desliza a barra de rolagem */
+    font-size: 62.5%;
 }
 
 body {
@@ -98,7 +99,7 @@ header {
 
 .menu-text {
     color: var(--menu-link);
-    font-size: 1.2rem;
+    font-size: 1.9rem;
     text-transform: uppercase;
 }
 
@@ -159,11 +160,11 @@ Botão menu mobile ----------*/
 .menu-mobile .menu-link {
     padding: 0.5rem 0;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 1.6rem;
 }
 
 .logo {
-    width: 3.24rem; /* comprimento */
+    width: 4.24rem; /* comprimento */
     height: auto; /* altura */
 }
 
@@ -171,6 +172,7 @@ Botão menu mobile ----------*/
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    font-size: 1.9rem;
 }
 
 #home {
@@ -184,16 +186,17 @@ Botão menu mobile ----------*/
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    /* padding-top: 2.5rem; */
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3.6rem;
     font-family: "Inter", sans-serif;
 }
 
 h2 {
     font-family: "Open Sans", sans-serif;
-    font-size: 2rem;
+    font-size: 2.6rem;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 2px;
@@ -201,7 +204,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.55rem;
+    font-size: 1.6rem;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-style: italic;
@@ -229,7 +232,7 @@ h3 {
 }
 
 .descricao-video h2 {
-    font-size: 2rem;
+    font-size: 2.8rem;
     text-transform: uppercase;
     margin-top: -2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -270,7 +273,7 @@ h3 {
 /* H3 */
 .card-titulo {
     color: var(--cor-texto); /* cor do texto */
-    font-size: 2rem; /* tamanho do texto */
+    font-size: 2.6rem; /* tamanho do texto */
     font-weight: 400; /* largura */
     font-family: "Inter", sans-serif; /* estilo das fontes */
 }
@@ -278,16 +281,18 @@ h3 {
 .card-descricao {
     color: var(--cor-texto);
     font-family: "Montserrat", sans-serif;
-    font-size: 1.1rem;
+    font-size: 1.6rem;
     font-weight: 400;
 }
 
 .card-item {
     margin-bottom: .8rem;
+    font-size: 1.6rem;
 }
 
 .card-item i {
     margin-right: 8px;
+    font-size: 1.6rem;
 }
 
 .card-item i:hover {
@@ -296,7 +301,7 @@ h3 {
 }
 
 .redes-sociais {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 
 .redes-sociais i:hover {
@@ -311,29 +316,30 @@ h3 {
     color: var(--cor-hover-whatsapp);
 }
 
-.col1 {
-    background: palevioletred;
+/* Sobre */
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-.col2 {
-    background: #1ec4f2;
+.sobre-logo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    /*border: 2px solid red; */
+    border: 2px solid var(--cor-border);
 }
 
-.col3 {
-    background: red;
+.sobre-descricao p {
+    text-align: justify;
+    font-size: 1.8rem;
 }
 
-.col4 {
-    background: #d7952a;
-}
 
-.col5 {
-    background: #2ad73e;
-}
 
-.col6 {
-    background: #5c048e;
-}
 /* Medidas Responsivas */
 /* Telas Até 768 */
 @media (max-width: 768px) {
@@ -366,15 +372,15 @@ h3 {
     }
 
     h1 {
-        font-size: 5rem;
+        font-size: 5.6rem;
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: 3.6rem;
     }
 
     h3 {
-        font-size: 2rem;
+        font-size: 2.6rem;
     }
 
     #home,
@@ -408,7 +414,7 @@ h3 {
 
 @media (min-width: 1200px) {
     h2 {
-        font-size: 4rem;
+        font-size: 5rem;
     }
 }
 
