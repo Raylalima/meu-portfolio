@@ -11,6 +11,7 @@
     --cor-texto: #e9e9e9;
     --menu-link: #e9e9e9;
     --cor-border:#e9e9e9;
+    --cor-fundo-secundaria: #000000;
     
     --cor-hover-icone: #d268a4;
     --cor-hover-instagram: #d7952a;
@@ -23,6 +24,7 @@
     --cor-texto: #1b1b1b;
     --menu-link: #1b1b1b;
     --cor-border: #1b1b1b;
+    --cor-fundo-secundaria: #aeadad;
 
     --cor-hover-icone: #d268a4;
     --cor-hover-instagram: #d7952a;
@@ -172,7 +174,7 @@ Botão menu mobile ----------*/
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    font-size: 1.9rem;
+    font-size: 1.6rem;
 }
 
 #home {
@@ -190,24 +192,28 @@ Botão menu mobile ----------*/
 }
 
 h1 {
-    font-size: 3.6rem;
+    font-size: 3.5rem; /* igual 35px */
     font-family: "Inter", sans-serif;
 }
 
 h2 {
     font-family: "Open Sans", sans-serif;
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 2px;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 h3 {
-    font-size: 1.6rem;
+    font-size: 1.55rem;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     font-style: italic;
+}
+
+p {
+    font-size: 1.6rem; /* igual a 16px */
 }
 
 .video iframe {
@@ -232,7 +238,7 @@ h3 {
 }
 
 .descricao-video h2 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     margin-top: -2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -273,7 +279,7 @@ h3 {
 /* H3 */
 .card-titulo {
     color: var(--cor-texto); /* cor do texto */
-    font-size: 2.6rem; /* tamanho do texto */
+    font-size: 2.4rem; /* tamanho do texto */
     font-weight: 400; /* largura */
     font-family: "Inter", sans-serif; /* estilo das fontes */
 }
@@ -281,7 +287,6 @@ h3 {
 .card-descricao {
     color: var(--cor-texto);
     font-family: "Montserrat", sans-serif;
-    font-size: 1.6rem;
     font-weight: 400;
 }
 
@@ -292,7 +297,7 @@ h3 {
 
 .card-item i {
     margin-right: 8px;
-    font-size: 1.6rem;
+    font-size: 1.9rem;
 }
 
 .card-item i:hover {
@@ -338,7 +343,29 @@ h3 {
     font-size: 1.8rem;
 }
 
+/* Footer */
+footer {
+  /* background: var(--cor-fundo-secundaria);  */
+   border-top: 1px solid var(--cor-border);
+}
+footer p {
+    padding: 1.2rem 6rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+}
 
+footer i {
+    color: #168edf;
+}
+
+footer a {
+    color: var(--menu-link);
+}
+
+footer a:hover {
+    color: #168edf;
+    transition: all 0.3s ease-in-out;
+}
 
 /* Medidas Responsivas */
 /* Telas Até 768 */
@@ -372,15 +399,15 @@ h3 {
     }
 
     h1 {
-        font-size: 5.6rem;
+        font-size: 5.2rem;
     }
 
     h2 {
-        font-size: 3.6rem;
+        font-size: 3.5rem;
     }
 
     h3 {
-        font-size: 2.6rem;
+        font-size: 2.5rem;
     }
 
     #home,
@@ -398,6 +425,11 @@ h3 {
 } /* FIM min 768px */
 
 @media (min-width: 992px) {
+
+    p {
+        font-size: 1.8rem;
+    }
+
     .produto-card {
         flex-direction: row;
     }
@@ -414,17 +446,17 @@ h3 {
 
 @media (min-width: 1200px) {
     h2 {
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
 }
 
 @media (min-width: 1400px) {
     h1 {
-      font-size: 6.5rem;  
+      font-size: 7.5rem;  
     }
 
     h2 {
-        font-size: 4.1rem;
+        font-size: 5.5rem;
     }
 
     h3 {
